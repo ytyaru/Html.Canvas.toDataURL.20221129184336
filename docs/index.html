@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="Canvasの描画結果を画像ファイルに保存する">
+<meta name="author" content="ytyaru">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">
+<link rel="icon" href="asset/image/avator.png">
+<link rel="stylesheet" href="css/styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/main.js"></script>
+</head>
+<body>
+<h1>Canvasの描画結果を画像ファイルに保存する</h1>
+<canvas id="canvas"></canvas>
+<button id="download" type="button">Download</button>
+<p>ダウンロードした画像ファイルをGIMPで開いて確認すると、24bit(RGB)モードだった。</p>
+<p>私は8bit(Indexed Color)で保存したい。どうやらPNGの仕様に従いバイナリデータを作成するしかないらしい。しかもそのためのライブラリが存在しない模様。Node.js用ライブラリならあるが、ブラウザ用はなさそう。</p>
+<p>もしかしたらPNGの仕様を調査して自分で実装せねばならないのだろうか……。</p>
+
+<a href="https://stackoverflow.com/questions/12261050/node-js-library-for-generating-indexed-pngs">参考1</a>
+</body>
+</html>
+<!-- https://coliss.com/articles/build-websites/operation/work/html-template-for-web-apps-or-sites.html -->
+<!-- https://coliss.com/articles/build-websites/operation/work/html5-template-for-2018.html -->
